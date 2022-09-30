@@ -16,7 +16,7 @@
 ## 4. Moving Files with scp
 * scp allows you to copy files from your computer to a remote computer. It is run from the client. First compile and run the file with javac and java.
 * In the terminal where the file is made, run *scp filename.java cs15lfa22zz@ieng6.ucsd.edu:~/* and enter the password.
-* Log into ieng6 with ssh and use ls. Run the program on the ieng6 computer, again using javac and java. The terminals should look like this.
+* Log into ieng6 with ssh and use ls. Run the program on the ieng6 computer, again using javac and java. The terminals should look like this.  
 ![Image](move1.png)  
 ![Image](move2.png)
 
