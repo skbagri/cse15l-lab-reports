@@ -22,9 +22,12 @@
 
 ## 5. Setting an SSH Key
 * Next, we will use ssh keys to create a public and private key by running *ssh-keygen -t ed25519*.
-* Follow the prompts and then copy the public key to the .ssh directory of the user account on the server. Here is an example.  
-
+* Follow the prompts and then copy the public key to the .ssh directory of the user account on the server.  
+* On the server, enter *mkdir .ssh* and then on the client enter */Users/joe/.ssh/id_rsa.pub cs15lfa22@ieng6.ucsd.edu:~/.ssh/authorized_keys*, using your username and path. Here is an example.  
+![Image](keys.png)
 
 ## 6. Optimizing Remote Running
-* 
-*   
+* First, I made an edit to the file WhereAmI.java.  
+* Then, I scp'd it and logged into the server.
+* The change showed after running javac and java. Here is the picture.  
+![Image](shortcut.png)
