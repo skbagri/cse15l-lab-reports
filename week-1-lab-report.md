@@ -12,7 +12,9 @@
 ## 3. Trying Some Commands
 * There are multiple commands you can try to run now.
 * Try them both on your computer and on the remote computer after ssh-ing. Here is a screenshot.  
-![Image](commands.png)
+![Image](commands.png)  
+* As we can see, the cd command changes the current directory and the ls -lat command lists all of the files found in the current directory.
+* The command cp /home/linux/ieng6/cs15lfa22/public/hello.txt copies the hello.txt file and the cat /home/linux/ieng6/cs15lfa22/public/hello.txt command prints its contents. 
 ## 4. Moving Files with scp
 * scp allows you to copy files from your computer to a remote computer. It is run from the client. First compile and run the file with javac and java.
 * In the terminal where the file is made, run *scp filename.java cs15lfa22zz@ieng6.ucsd.edu:~/* and enter the password.
@@ -23,11 +25,13 @@
 ## 5. Setting an SSH Key
 * Next, we will use ssh keys to create a public and private key by running *ssh-keygen -t ed25519*.
 * Follow the prompts and then copy the public key to the .ssh directory of the user account on the server.  
-* On the server, enter *mkdir .ssh* and then on the client enter */Users/joe/.ssh/id_rsa.pub cs15lfa22@ieng6.ucsd.edu:~/.ssh/authorized_keys*, using your username and path. Here is an example.  
+* On the server, enter *mkdir .ssh* and then on the client enter */Users/joe/.ssh/id_rsa.pub cs15lfa22@ieng6.ucsd.edu:~/.ssh/authorized_keys*, using your username and path. This copies the public key to the .ssh directory on the server. This new directory is created by the mkdir command. It allows us to ssh from the client to the server without having to enter our password.  
+* Here is an example.  
 ![Image](keys.png)
 
 ## 6. Optimizing Remote Running
 * First, I made an edit to the file WhereAmI.java.  
 * Then, I scp'd it and logged into the server.
 * The change showed after running javac and java. Here is the picture.  
-![Image](shortcut.png)
+![Image](shortcut.png)  
+* One way I optimized remote running was by running the javac and java command on the smae line, separated by a semi-colon. This reduced the time and number of lines of commands needed to compile and run the java program.
