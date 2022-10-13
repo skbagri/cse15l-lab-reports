@@ -1,5 +1,10 @@
 # Week 1 Lab Report
 ## Part 1: Simplest Search Engine  
+Simplest Search Engine Code  
+
+![Image](SearchEngineAdd.png)  
+
+![Image](SearchEngineError.png)  
 
 ## Part 2: Debugging    
 **ArrayExamples - averageWithoutLowest Bug**  
