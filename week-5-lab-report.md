@@ -20,7 +20,7 @@ technical/plos/journal.pbio.0020019.txt:2
 ```
 This returns the number of times "important" appears in each of the given files.
 
-Example 3:
+Example 3:  
 ```
 [cs15lfa22ab@ieng6-203]:docsearch:186$ grep -c "religion" technical/911report/chapter-13.*.txt
 technical/911report/chapter-13.1.txt:0
