@@ -3,10 +3,10 @@
 ## Part 1: Vim change for skills demo   
 Changing the main method to take a command-line argument  
 ```
-/tech <enter> n h h h dw dw <delete> i args[1] <esc> :w <enter>
+/tech <enter> n h h h dw dw <delete> <delete> i args[1] <esc> :w <enter>
 ```
 ![Image](tech_command.png)  
-* command: /tech
+* commands: /tech
 * searches for an occurrence of the phrase "tech" in the file
 
 ![Image](enter_n_command.png)  
@@ -14,11 +14,11 @@ Changing the main method to take a command-line argument
 * goes to the second instance of the phrase "tech" in the file
 
 ![Image](hhh_command.png)  
-* commands: h, h, h
+* commands: h
 * moves the cursor left 3 times
 
 ![Image](dw_command.png)  
-* commands: dw, dw, delete
+* commands: dw, delete
 * deletes the phrase "./technical"
 
 ![Image](insert_command.png)  
